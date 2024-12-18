@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <!-- the style im hoping to portray on my website is minimalist but fun
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<meta charset="UTF-8">
+<title>LAURA LÓPEZ</title>
+<link href="styles.css" rel="stylesheet">
+<body>
+
+<div class="grid-container">
+<div class="Header">
+    <header class="flexbox-center">
+        <h1>LAURA LÓPEZ</h1>
+    </header>
+</div>
+   
+<div class="flexbox-nav">
+   <nav>
+        <a href="index.html">home</a>
+		<a href="background.html">background</a>
+		<a href="contact.html">contact</a>
+		<a href="https://www.linkedin.com/in/laura-c-l%C3%B3pez-caraballo-040221181/">linkedin</a>
+		<a href="https://www.fiverr.com/lau_locaraballo?up_rollout=true">fiverr</a>
+	</nav>
+</div>
+
+<div class="maincontent">
+  <dl>
+        Laura's technical experience includes GIS mapping with ArcGIS and ArcGISPro and coding languages such as Python, SQL, HTML & Javascript. 
+        
+        <h2>MSc Geographic Information Science</h2>
+            Technological University Dublin
+            September 2024-present
+            
+    	<h2>Retina International</h2>
+    		Membership and Engagement Manager
+    		June 2023 - March 2024
+    		
+  		<h2>Dublin City Council</h2>
+            Social Research Assistant
+            July 2022-January 2023
+            
+    	<h2>MSc in Smart and Sustainable Cities</h2>
+		    Trinity College Dublin
+		    September 2021 - August 2022
+		
+		<h2>Dublin City Community Coop</h2>
+            Research Intern
+            January 2022 - March 2022
+        
+        <h2>University of Puerto Rico Medical Campus</h2>
+            Psychology Research Assistant
+            November 2020 - 2021
+        
+        <h2>Behavior Frontiers</h2>
+            Applied Behavior Analysis Technician
+            September 2019 - March 2020
+            
+        <h2>BA in Psychology and Gender Studies</h2>
+            University of Massachusetts Boston
+            September 2015 - August 2019 
+    </dl>
+</div>
+    <section>
+        <h2> Get in touch with me; I'd love to hear from you </h2>
+        <div class="flexbox-center">
+            <form action="mailto: lopezcal@tcd.ie" method= "get" id="myform"
+            name="myform">
+        <fieldset>
+        <legend> name & email </legend>
+        name: <input type="text" id="fname" name="fname"><br><br>
+        e-mail: <input type="text" id="email" name="email" required><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend> down here please :)</legend> 
+        <textarea rows="4" cols="50">
+        </textarea><br>
+        <input type="submit" value="Yellooow!"> 
+        <input type="reset">
+        </fieldset>
+    
+        </form>
+    </div>
+<script>
+document.getElementById("myform").addEventListener("submit", function(event) {
+  const name = document.getElementById("fname").value;
+  const email = document.getElementById("email").value;
+  const message = document.querySelector("textarea").value;
+
+  if (name === "" || email === "" || message === "") {
+    event.preventDefault(); 
+    alert("Please fill in all fields.");
+  } else {
+    alert("Thank you for contacting me!");
+  }
+});
+</script>
+    </section>
+</div>
+<div class="extraspace"></div>
+<div class="footer">
+    <footer>
+        <p><em>*Laura is currently undergoing an MSc in GIS</em></p>
+    </footer>
+</div>
+
+</div>
+   
+
+<style>
+body {
+  background-color: #D9B6FF;
+}
+div.maincontent {
+  list-style-type: none;
+  font-size: 18px;
+  background-color: #C8FF68;
+  width: 80%; 
+  max-width: 700px;   border: 3px ridge black;
+  padding: 50px;
+  margin: 20px auto; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); }
+section{
+background-color: #C8FF68;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+
+
+</body>

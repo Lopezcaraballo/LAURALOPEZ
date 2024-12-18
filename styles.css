@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%; }
+   
+.grid-container {display: flex;
+    flex-direction: column;
+    gap:20px;
+    min-height:100vh
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+header h1 {display: flex; justify-content: center; text-align: center; font-family: monospace; font-size:80px; color: #000000; margin: 0;}
+navbar {font-size: 40px; font-family: monospace; display: flex; justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  top: 0;
+  width: 100%
+  padding: 10px 0;
+  position: fixed;
+  z-index: 100; /*keeps it on top of other content*/
+  gap: 20px;
+}
+maincontent {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    font-family: monospace; 
+    font-size: 20px; 
+    align-items: stretch;   
+} 
+section{font-family: monospace; padding:20px;font-size: 16px; background-color:#C8FF68}  
+footer {
+  justify-content: flex-end; 
+  align-items: stretch; 
+  grid-area: footer; 
+}
+@media (min-width 768px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns; 1fr, 2fr, 1fr
+        grid-template-rows: 400px 112px 583px 105px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    "header header header"
+    "navbar navbar navbar"
+    "maincontent maincontent maincontent"
+    "footer footer footer";       
+}
+}
+header h1 {display: flex; justify-content:center; text-align: center; align-items; center; font-family: monospace; font-size:80px; margin:0;} 
+navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #C8FF68; 
+    padding: 10px; 
+    position: fixed; 
+    top: 0;     
+    z-index: 1000; 
+    gap: 15px; 
+}
+a {
+    text-decoration: none; 
+    font-family: monospace; 
+    font-size: 30px; 
+    background:#C8FF68; 
+    height: auto; 
+    padding: 10px; 
+    transition: color 0.5s;}
+a, button, .clickable {
+  cursor: pointer;}
+a:link{color: #006400;} 
+a:visited{color: #000000;}
+a:hover{color: #FF69B4;}
+.maincontent{display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: monospace; font-size:20px; line-height: 1.6; font-weight: 400; color: #222; background-color: #D9B6FF;}
+a, input[type="submit"], input[type="reset"] {transition: background-color 0.3s ease, color 0.3s ease;} 
+   
+   /* Form field colors */
+input, textarea {
+    background-color: ##FF69B4;  /* White background for form elements */
+    color: #333;  /* Dark text for readability */
+    border: 2px solid #333;  /* Dark border */
+}
+
+input[type="submit"] {
+    background-color: #FF69B4;  /* Pink submit button */
+    color: black;  /* White text */
+}
+
+input[type="reset"] {
+    background-color: #C8FF68;      
+    color: black; }
+
+p {
+  font-family: monospace;
+  font-size: 20px;
+}
+p{text-align:right;
+}
+footer{background-color: #D9B6FF;}
+
+
+
+

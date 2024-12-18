@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LAURA LÓPEZ </title>
+<link href="styles.css" rel="stylesheet">
+<body>
+<style>
+body {
+  background-color: #D9B6FF;
+}
+div.maincontent{background-color: #C8FF68;
+  width: 70%;
+  border: 3px black;
+  border-style: ridge;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+
+   <!-- Header Section -->
+<div class="grid-container">
+<div class="Header">
+    <header class="flexbox-center">
+        <h1>LAURA LÓPEZ</h1>
+    </header>
+    <!-- Navbar Section -->
+<div class="flexbox-nav">    
+    <nav>
+        <a href="index.html">home</a>
+		<a href="background.html">background</a>
+		<a href="contact.html">contact</a>
+	    <a href="https://www.linkedin.com/in/laura-c-l%C3%B3pez-caraballo-040221181/">linkedin</a>
+	    <a href="https://www.fiverr.com/lau_locaraballo?up_rollout=true">fiverr</a>
+	</nav>
+</div>
+   <!-- Main Content Section -->
+<div class="maincontent">
+  <dl>
+    Laura is from a small archipelago in the Caribbean, called Puerto Rico. They come from a mixed educational and professional background where they worked in hospital settings in the mental health field, then segwaying into the urban planning field with a mental health and intersectional lens and now learning programming to further social science research in urban settings. As an advocate for community growth,they use humanistic and creative learning to give aid to those who need it. In their spare time, they love to partake in community art gatherings and tufting rugs.
+  </dl>
+  <audio controls>
+      <source src="lofi-rain.mp3" type="audio/mp3">
+    </audio>
+    <div id="image-place">
+        <img src="background.jpg" alt="Laura 2" style="width: 100%; height:auto;">
+    </div>
+</div>
+<button id="toggleMode">DarkMode? Click Here!</button>
+
+   <!-- footer Section -->
+    <footer>
+        <p><em>*Laura is currently undergoing an MSc in GIS</em></p>
+    </footer>
+
+<script>
+  const button = document.getElementById("toggleMode");
+  
+  button.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+<style> 
+body.dark-mode {
+    background-color: #333;
+    color: grey;
+  }
+</style>
+</body>
+
+</html>
